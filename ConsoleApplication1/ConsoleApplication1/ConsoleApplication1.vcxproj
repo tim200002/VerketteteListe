@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bidrectional_list.h" />
     <ClInclude Include="forwarditerator.h" />
     <ClInclude Include="forward_list.h" />
     <ClInclude Include="node.h" />
@@ -154,6 +155,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bidrectional_list.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="forwarditerator.cpp" />
     <ClCompile Include="forward_list.cpp" />
