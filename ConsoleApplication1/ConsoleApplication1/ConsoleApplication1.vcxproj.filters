@@ -30,6 +30,9 @@
     <ClInclude Include="forwarditerator.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="bidrectional_list.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -45,6 +48,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="forwarditerator.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="bidrectional_list.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
