@@ -33,4 +33,11 @@ forwarditerator<T> forward_list<T>::begin()
 	return a;
 }
 
+template<typename T>
+forwarditerator<T> forward_list<T>::end()
+{
+	forwarditerator<T> a(nullptr);
+	return a;
+}
+
 template class forward_list<int>;

@@ -38,4 +38,16 @@ T& forwarditerator<T>::get_value()
 	return actual->get_content();
 }
 
+template<typename T>
+bool forwarditerator<T>::operator==(forwarditerator<T>& it)
+{
+	return actual == it.actual;
+}
+
+template<typename T>
+bool forwarditerator<T>::operator!=(forwarditerator<T> it)
+{
+	return actual != it.actual;
+}
+
 template class forwarditerator<int>;
