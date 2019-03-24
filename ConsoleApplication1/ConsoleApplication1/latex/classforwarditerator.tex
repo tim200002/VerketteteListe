@@ -1,0 +1,132 @@
+\hypertarget{classforwarditerator}{}\section{forwarditerator$<$ T $>$ Class Template Reference}
+\label{classforwarditerator}\index{forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}}
+Inheritance diagram for forwarditerator$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classforwarditerator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classforwarditerator_a9b8b2376cd4ac3fd12302b1edc52026f}\label{classforwarditerator_a9b8b2376cd4ac3fd12302b1edc52026f}} 
+{\bfseries forwarditerator} (\mbox{\hyperlink{classnode}{node}}$<$ T $>$ $\ast$actual)
+\item 
+\mbox{\Hypertarget{classforwarditerator_a976392a8574122f1129abafc2b4088f1}\label{classforwarditerator_a976392a8574122f1129abafc2b4088f1}} 
+void {\bfseries plus\+\_\+one} ()
+\item 
+\mbox{\Hypertarget{classforwarditerator_ada00f7f88cba9ea0d9f6a2190bbb15cc}\label{classforwarditerator_ada00f7f88cba9ea0d9f6a2190bbb15cc}} 
+\mbox{\hyperlink{classnode}{node}}$<$ T $>$ $\ast$ {\bfseries at\+\_\+pos} (int index)
+\item 
+\mbox{\Hypertarget{classforwarditerator_a504c6128df3a710f7836813e05ee0c97}\label{classforwarditerator_a504c6128df3a710f7836813e05ee0c97}} 
+T \& {\bfseries get\+\_\+value} ()
+\item 
+\mbox{\Hypertarget{classforwarditerator_a5b38d917507c92774b1eb5f14d2d00e1}\label{classforwarditerator_a5b38d917507c92774b1eb5f14d2d00e1}} 
+\mbox{\hyperlink{classnode}{node}}$<$ T $>$ $\ast$ {\bfseries get\+\_\+\+Actual} ()
+\item 
+\mbox{\Hypertarget{classforwarditerator_ac4ee076a6aae9d8988a4a1c704e5d578}\label{classforwarditerator_ac4ee076a6aae9d8988a4a1c704e5d578}} 
+T \& {\bfseries operator $\ast$} ()
+\item 
+bool \mbox{\hyperlink{classforwarditerator_ab19bc229f24b7682e7faf96c8cebcd27}{operator==}} (\mbox{\hyperlink{classforwarditerator}{forwarditerator}}$<$ T $>$ \&it)
+\begin{DoxyCompactList}\small\item\em Equality operator. Returns true if both iterators point to same node \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classforwarditerator_a01a4fa4d5611a1b141ff21f5b513391a}{operator!=}} (\mbox{\hyperlink{classforwarditerator}{forwarditerator}}$<$ T $>$ it)
+\begin{DoxyCompactList}\small\item\em Inequality operator. Returns true if both iterators dont\textquotesingle{}t show to same node \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classforwarditerator_acdf448963d78458a861511435f14d885}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Increment operator. Jumps to next node \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classforwarditerator}{forwarditerator}} \& \mbox{\hyperlink{classforwarditerator_a380be6fded24cf931671d22bf0887eb0}{operator+}} (int index)
+\begin{DoxyCompactList}\small\item\em Addition operator. Moves iterator index steps in positive driection \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classforwarditerator_ae13eb97cc8ce536d1bd8230ab53d3a74}\label{classforwarditerator_ae13eb97cc8ce536d1bd8230ab53d3a74}} 
+\mbox{\hyperlink{classnode}{node}}$<$ T $>$ $\ast$ {\bfseries actual}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classforwarditerator_a01a4fa4d5611a1b141ff21f5b513391a}\label{classforwarditerator_a01a4fa4d5611a1b141ff21f5b513391a}} 
+\index{forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classforwarditerator}{forwarditerator}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classforwarditerator}{forwarditerator}}$<$ T $>$}]{it }\end{DoxyParamCaption})}
+
+
+
+Inequality operator. Returns true if both iterators dont\textquotesingle{}t show to same node 
+
+Tim Lindenau, 24/03/2019. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & The iterator. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+True if the parameters are not considered equivalent. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classforwarditerator_a380be6fded24cf931671d22bf0887eb0}\label{classforwarditerator_a380be6fded24cf931671d22bf0887eb0}} 
+\index{forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classforwarditerator}{forwarditerator}}\& \mbox{\hyperlink{classforwarditerator}{forwarditerator}}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Addition operator. Moves iterator index steps in positive driection 
+
+Tim Lindenau, 24/03/2019. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & How many steps. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+The same object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classforwarditerator_acdf448963d78458a861511435f14d885}\label{classforwarditerator_acdf448963d78458a861511435f14d885}} 
+\index{forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classforwarditerator}{forwarditerator}}$<$ T $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increment operator. Jumps to next node 
+
+Tim Lindenau, 24/03/2019. \mbox{\Hypertarget{classforwarditerator_ab19bc229f24b7682e7faf96c8cebcd27}\label{classforwarditerator_ab19bc229f24b7682e7faf96c8cebcd27}} 
+\index{forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!forwarditerator$<$ T $>$@{forwarditerator$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classforwarditerator}{forwarditerator}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classforwarditerator}{forwarditerator}}$<$ T $>$ \&}]{it }\end{DoxyParamCaption})}
+
+
+
+Equality operator. Returns true if both iterators point to same node 
+
+Tim Lindenau, 24/03/2019. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & \mbox{[}in,out\mbox{]} The iterator. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+True if the parameters are considered equivalent. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+forwarditerator.\+h\item 
+forwarditerator.\+cpp\end{DoxyCompactItemize}
