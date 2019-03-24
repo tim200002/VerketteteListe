@@ -13,6 +13,11 @@ public:
 
 	void operator--();
 
+	bidirectional_iterator<T> operator-(int index);
+
+	void operator++();
+	bidirectional_iterator<T> operator+(int index);
+
 	bool operator!=(bidirectional_iterator<T> other);
 
 	bool operator==(bidirectional_iterator<T> other);
