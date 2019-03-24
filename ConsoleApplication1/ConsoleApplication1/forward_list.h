@@ -18,15 +18,13 @@ public:
 	/**********************************************************************************************//**
 	 * <brief> Pushes a front</brief>
 	 *
-	 * <remarks> Timli, 23/03/2019.</remarks>
+	 * \author	Tim Lindenau
+	 * \date	24/03/2019
 	 *
-	 * <param name="newOne"> New node is initialized with .</param>
+	 * \param	newOne	New node is initialized with things
 	 *
-	 * ### <author> Timli</author>
-	 *
-	 * ### <date> 23/03/2019</date>
+	 * ### remarks	Timli, 23/03/2019.
 	 **************************************************************************************************/
-
 	void push_front(T newOne);
 
 	/**********************************************************************************************//**
@@ -41,28 +39,16 @@ public:
 
 	void delete_first();
 
-	/**********************************************************************************************//**
-	 * <brief> returns an iterator object with the adress of the beginning of the list as actual</brief>
-	 *
-	 * <remarks> Timli, 23/03/2019.</remarks>
-	 *
-	 * <returns> A forwarditerator&lt;T&gt;</returns>
-	 **************************************************************************************************/
-
+//comment maybe
 	forwarditerator<T> begin();
 
-	/**********************************************************************************************//**
-	 * <brief> returns an iterator object with the adress of the beginning of the end(nullptr) of the list as actual</brief>
-	 *
-	 * <remarks> Timli, 23/03/2019.</remarks>
-	 *
-	 * <returns> A forwarditerator&lt;T&gt;</returns>
-	 **************************************************************************************************/
 
 	forwarditerator<T> end();
 
 	
-
+	///<summary>
+	///This class performs important functions
+	///</summary>
 	T& operator[](int index) {
 		forwarditerator<T> it = this->begin();
 		it = it + index;

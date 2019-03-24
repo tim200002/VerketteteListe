@@ -14,12 +14,9 @@ bidirectional_iterator<T>::~bidirectional_iterator()
 {
 }
 
-/**********************************************************************************************//**
- * <summary> Decrement operator. Jumps to one node in front</summary>
- *
- * <remarks> Timli, 24/03/2019.</remarks>
- **************************************************************************************************/
-
+/// <summary>	Decrement operator. Jumps one Node in front </summary>
+///
+/// <remarks>	Tim Lindenau, 24/03/2019. </remarks>
 template<typename T>
 void bidirectional_iterator<T>::operator--()
 {
