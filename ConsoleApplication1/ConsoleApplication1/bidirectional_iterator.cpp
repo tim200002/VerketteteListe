@@ -24,7 +24,8 @@ template<typename T>
 void bidirectional_iterator<T>::operator--()
 {
 
-	forwarditerator<T>::actual = forwarditerator<T>::actual->get_previous();
+	//forwarditerator<T>::actual = forwarditerator<T>::actual->get_previous();
+	forwarditerator<T>::actual = previous;
 	// TODO: hier Rückgabeanweisung eingeben
 }
 
@@ -32,6 +33,12 @@ template<typename T>
 bool bidirectional_iterator<T>::operator!=(bidirectional_iterator<T> other)
 {
 	return forwarditerator<T>::actual != other.actual;
+}
+
+template<typename T>
+bool bidirectional_iterator<T>::operator==(bidirectional_iterator<T> other)
+{
+	return  forwarditerator<T>::actual == other.actual;
 }
 
 

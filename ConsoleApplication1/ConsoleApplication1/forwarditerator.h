@@ -20,7 +20,7 @@ public:
 		return actual;
 	}
 
-	T operator*() {
+	T& operator*() {
 		return actual->get_content();
 	}
 

@@ -14,5 +14,7 @@ public:
 	void operator--();
 
 	bool operator!=(bidirectional_iterator<T> other);
+
+	bool operator==(bidirectional_iterator<T> other);
 };
 
