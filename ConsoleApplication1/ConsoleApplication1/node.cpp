@@ -4,10 +4,21 @@
 template <typename T>
 node<T>::node(T content, node* next)
 {
+	previous = nullptr;
 	T* temp = new T;
 	*temp = content;
 	content_ptr = temp;
 	this->next = next;
+}
+
+template<typename T>
+node<T>::node(T content, node * next, node * previous)
+{
+	T* temp = new T;
+	*temp = content;
+	content_ptr = temp;
+	this->next = next;
+	this->previous = previous;
 }
 
 template <typename T>

@@ -6,7 +6,7 @@ template <typename T>
 
 class forward_list
 {
-private:
+protected:
 
 	node<T>* first = nullptr;
 
@@ -65,6 +65,7 @@ public:
 
 	T& operator[](int index) {
 		forwarditerator<T> it = this->begin();
+		it = it + index;
 		T& temp = it.get_value();
 		return temp;
 	}

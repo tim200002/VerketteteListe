@@ -8,7 +8,7 @@
 template<typename T>
 class forwarditerator
 {
-private:
+protected:
 	node<T>* actual;
 public:
 	forwarditerator(node<T>* actual);

@@ -33,6 +33,9 @@
     <ClInclude Include="bidrectional_list.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="bidirectional_iterator.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -51,6 +54,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="bidrectional_list.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="bidirectional_iterator.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
