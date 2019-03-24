@@ -36,6 +36,9 @@
     <ClInclude Include="bidirectional_iterator.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="SortFunctions.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -58,6 +61,9 @@
     </ClCompile>
     <ClCompile Include="bidirectional_iterator.cpp">
       <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SortFunctions.cpp">
+      <Filter>Headerdateien</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
